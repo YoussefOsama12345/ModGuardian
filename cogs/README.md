@@ -27,7 +27,7 @@ touch cogs/myfeature.py
 
    2. Define a new class that inherits from `commands.Cog`:
 
-```
+```python
 from discord.ext import commands
 
 class MyFeature(commands.Cog):
@@ -44,7 +44,7 @@ async def setup(bot):
 
 3. It will be auto-loaded by `bot.py` if you're dynamically loading cogs using:
 
-```
+```python
 or filename in os.listdir("./cogs"):
     if filename.endswith(".py"):
         await bot.load_extension(f"cogs.{filename[:-3]}")
