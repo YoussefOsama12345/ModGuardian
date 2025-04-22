@@ -1,0 +1,11 @@
+# Core Discord bot library
+discord.py==2.3.2
+
+# To load environment variables from a .env file
+python-dotenv==1.0.1
+
+# Optional: for scheduling timed mutes/unmutes or reminders
+apscheduler==3.10.4
+
+# Optional: to log into files (standard library logging also works)
+loguru==0.7.2
