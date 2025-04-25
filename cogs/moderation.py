@@ -18,10 +18,8 @@ import os
 from dotenv import load_dotenv
 from utils.time_utils import parse_duration
 
-# Load environment variables from .env
 load_dotenv()
 
-# Name of the mute role, default is "Muted"
 MUTE_ROLE_NAME = os.getenv("MUTE_ROLE_NAME", "Muted")
 
 class Moderation(commands.Cog):

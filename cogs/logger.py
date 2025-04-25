@@ -13,10 +13,8 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Channel ID where log messages will be sent
 LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", 0))
 
 class Logger(commands.Cog):

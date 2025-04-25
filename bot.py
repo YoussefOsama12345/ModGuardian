@@ -14,12 +14,10 @@ import os
 import asyncio
 from config import settings
 
-# Set up Discord intents (required for moderation features)
 INTENTS = discord.Intents.all()
-INTENTS.message_content = True      # needed for on_message
+INTENTS.message_content = True     
 INTENTS.members = True  
 
-# Create bot instance
 bot = commands.Bot(command_prefix=settings.COMMAND_PREFIX, intents=INTENTS)
 
 @bot.event
@@ -51,5 +49,4 @@ async def main():
     except Exception as e:
         print("🔥 An error occurred:", e)
 
-# Start the bot
 asyncio.run(main())

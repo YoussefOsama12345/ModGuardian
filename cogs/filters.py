@@ -42,7 +42,7 @@ class Filters(commands.Cog):
 
         content_lower = message.content.lower()
 
-        # 🚫 Bad word filter
+        # Bad word filter
         for word in self.bad_words:
             if word.strip() in content_lower:
                 await message.delete()
@@ -51,7 +51,7 @@ class Filters(commands.Cog):
                 )
                 return
 
-        # 🛑 Simple anti-spam detection: repeated messages
+        # Simple anti-spam detection: repeated messages
         user_id = message.author.id
         user_msgs = self.message_cache.get(user_id, [])
         user_msgs.append(message.content)

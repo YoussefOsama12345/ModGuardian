@@ -5,20 +5,24 @@ description = "A powerful, customizable Discord moderation bot built with Python
 authors = ["Youssef Osama <osama74454@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"
-homepage = "https://github.com/yourusername/modguardian"
-repository = "https://github.com/yourusername/modguardian"
-keywords = ["discord", "moderation", "bot", "discord.py", "AI", "guardian"]
+homepage = "https://github.com/YoussefOsama12345/modguardian"
+repository = "https://github.com/YoussefOsama12345/modguardian"
+keywords = ["discord", "moderation", "bot", "discord.py", "AI", "guardian", "automation", "filter"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 discord.py = "^2.3.2"
 python-dotenv = "^1.0.1"
+apscheduler = "^3.10.4"
+loguru = "^0.7.2"
+sqlmodel = "^0.0.16"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.3.0"
 flake8 = "^7.0.0"
 mypy = "^1.9.0"
 isort = "^5.13.2"
+pytest = "^8.1.1"
 
 [build-system]
 requires = ["poetry-core"]

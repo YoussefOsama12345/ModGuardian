@@ -62,10 +62,10 @@ class Events(commands.Cog):
         elif isinstance(error, commands.MissingRequiredArgument):
             await ctx.send("⚠️ You missed a required argument.")
         elif isinstance(error, commands.CommandNotFound):
-            pass  # Silently ignore unknown commands
+            pass 
         else:
             await ctx.send("❌ An unexpected error occurred.")
-            raise error  # Useful for debugging during development
+            raise error  
 
 async def setup(bot):
     """Asynchronously add the Events cog to the bot."""

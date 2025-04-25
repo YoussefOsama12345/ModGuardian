@@ -1,11 +1,29 @@
-# Core Discord bot library
-discord.py==2.3.2
+# =====================
+# Core Dependencies
+# =====================
 
-# To load environment variables from a .env file
-python-dotenv==1.0.1
+discord.py==2.3.2           # Core Discord bot library
+python-dotenv==1.0.1        # Load environment variables from .env
 
-# Optional: for scheduling timed mutes/unmutes or reminders
-apscheduler==3.10.4
+# =====================
+# Optional Enhancements
+# =====================
 
-# Optional: to log into files (standard library logging also works)
-loguru==0.7.2
+apscheduler==3.10.4         # Scheduled tasks (e.g., temp mute/unmute)
+loguru==0.7.2               # Elegant logging to file/console
+
+# =====================
+# Development Tools (optional, if you plan testing)
+# =====================
+
+black==24.3.0               # Code formatter
+flake8==7.0.0               # Code linting
+isort==5.13.2               # Import sorting
+mypy==1.9.0                 # Static typing checks
+pytest==8.1.1               # Unit testing framework
+
+# =====================
+# SQLModel + Database
+# =====================
+
+sqlmodel==0.0.16            # Unified ORM and Pydantic-based DB layer
